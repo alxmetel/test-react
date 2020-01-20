@@ -58,7 +58,7 @@ export const reducer = (state = initialState, action) => {
       }
     case 'dispatchClientSearchResults':
       return {
-        clientSearchResults: state.clientSearchResults.concat(action.value)
+        clientSearchResults: action.value
       }
     default:
       return state
