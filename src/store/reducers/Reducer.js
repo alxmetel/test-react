@@ -58,6 +58,7 @@ export const reducer = (state = initialState, action) => {
       }
     case 'dispatchClientSearchResults':
       return {
+        ...state,
         clientSearchResults: action.value
       }
     default:
