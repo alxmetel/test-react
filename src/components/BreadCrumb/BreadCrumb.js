@@ -13,7 +13,7 @@ export const BreadCrumb = (props) => {
   }
 
   const renderBreadCrumbs = () => {
-    let crumbs = props.breadCrumbs
+    let crumbs = props.breadCrumbs;
     if (crumbs) {
       return crumbs.map((c, i) => {
         return <Link to={c.path} class="breadcrumb" key={i} onClick={() => { props.removeSelfAndChildren(c.path) } }>{c.name}</Link>
